@@ -89,12 +89,12 @@ legend {
     margin-right: auto;
     margin-bottom: 5px;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 label {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .g-recaptcha {
     margin-bottom: 10px;

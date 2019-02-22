@@ -18,9 +18,9 @@
  */
 
 #EDIT THE FOLLOWING:
-$toAddress = "yourname@example.com";  //place your/your client's email address here
-$toName = "CLIENT NAME HERE"; //place your client's name here
-$website = "CLIENT WEBSITE NAME HERE";  //place NAME of your client's website here
+$toAddress = "hello@dshomestudio.com";  //place your/your client's email address here
+$toName = "David Quach"; //place your client's name here
+$website = "dshomestudio.com";  //place NAME of your client's website here
 #--------------END CONFIG AREA ------------------------#
 $sendEmail = TRUE; //if true, will send an email, otherwise just show user data.
 $dateFeedback = true; //if true will show date/time with reCAPTCHA error - style a div with class of dateFeedback
@@ -58,13 +58,14 @@ if ($response != null && $response->success)
 	<!-- START HTML FORM -->
 	<form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="post">
 	<div>
+		<h2>Let's Get In Touch!</h2>
 		<label>
-			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
+			<input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
 		</label>
 	</div>
 	<div>	
 		<label>
-			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
+			<input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
 		</label>
 	</div>
 	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
@@ -85,15 +86,13 @@ if ($response != null && $response->success)
 	<div>	
 		<fieldset>
 			<legend>What Services Are You Interested In?</legend>
-			<input type="checkbox" name="Interested_In[]" value="New Website" tabindex="40" /> New Website <br />
-			<input type="checkbox" name="Interested_In[]" value="Website Redesign" /> Website Redesign <br />
-			<input type="checkbox" name="Interested_In[]" value="Special Application" /> Special Application <br />
-			<input type="checkbox" name="Interested_In[]" value="Lollipops" /> Complimentary Lollipops <br />
+			<input type="checkbox" name="Interested_In[]" value="Interior Design" tabindex="40" /> Interior Design <br />
+			<input type="checkbox" name="Interested_In[]" value="Photography" /> Photography <br />
 			<input type="checkbox" name="Interested_In[]" value="Other" /> Other <br />
 		</fieldset>
 	</div>
 	
-		<div>	
+	<div>	
 		<fieldset>
 			<legend>Would you like to join our mailing list?</legend>
 			<input type="radio" name="Join_Mailing_List?" value="Yes" 

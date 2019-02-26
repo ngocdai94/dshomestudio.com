@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DS Home Studio - Home Interior Design and Professfional Photography for Real Estates">
+    <meta name="description" content="DS Home Studio - Home Interior Design and Professional Photography for Real Estates">
     <meta name="keywords" content="DS, home, studio, interior, design, professional, photography">
+    
+    <!-- under construction: no follow -->
+    <meta name="robots" content="index,nofollow" />
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,9 +31,8 @@
 
     <!-- CSS & FontAwesome -->
     <link rel="stylesheet" href="css/main.css"/> 
-    <link rel="stylesheet" href="/css/menu.css"/>
     <link rel="stylesheet" href="/css/fasolidbrand.css"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <?=$cssForm?>
 
     <!-- JavaScript -->
@@ -43,20 +45,49 @@
             <h1 id="logo">
                 <a href="/index.php"><!--<img src="/imgs/og-image.jpg" alt="logo" width="40px" height="20px">--> DS Home Studio</a>
             </h1>
+            
+            <!-- Boostrap Nav Menu with Dynamic Page Modification-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/index.php">DS Home Studio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <nav id="cssmenu">
-                <ul>
-                    <li><a href="/index.php"><span><i class="fa fa-fw fa-home"></i> Home</span></a></li>
-                    <li><a href="/about.php"><span>About Us</span></a></li>
-                    <li>
-                        <a href="#"><span><i class="fa fa-fw fa-chevron-down"></i>Service</span></a>
-                        <ul>
-                            <li><a href="/interior-design/index.php"><span>Interior Design</span></a></li>
-                            <li><a href="/photography/index.php"><span>Photography</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/pofolio/index.php"><span>Portfolio</span></a></li>
-                    <li><a href="/contact.php"><span>Contact Us</span></a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item <?=$homeActive?>">
+                            <a class="nav-link" href="/index.php">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item <?=$aboutActive?>">
+                            <a class="nav-link" href="/about.php">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown <?=$serviceActive?>">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item <?=$interiorActive?>" href="/interior-design/index.php">Interior Design</a>
+                                <a class="dropdown-item <?=$photographyActive?>" href="/photography/index.php">Photography</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown <?=$portfolioActive?>">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolios</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item <?=$interiorPortfolioActive?>" href="/portfolio/interior.php">Interior Design</a>
+                                <a class="dropdown-item <?=$photographyPortfolioActive?>" href="/portfolio/photography.php">Photography</a>
+                                <a class="dropdown-item <?=$videoPortfolioActive?>" href="/portfolio/videos.php">Videos</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item <?=$porfolioActive?>">
+                            <a class="nav-link" href="/pofolio/index.php">Portfolios</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link <?=$contactActive?>" href="/contact.php">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </nav>
         </header>

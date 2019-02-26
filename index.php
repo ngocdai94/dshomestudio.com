@@ -14,7 +14,6 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                     
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -61,16 +60,16 @@
                 <h2>Interior Design Service</h2>
                 <div class="grid-container interiorSection"> 
                     <div class="grid-item">
-                        <a href="#"><img src="imgs/4.jpg" alt="4"></a>
-                        <h3>Interior Gallery</h3>
+                        <a href="#"><img src="imgs/6.jpg" alt="4"></a>
+                        <h3><a href="#">Interior Gallery</a></h3>
                     </div>
                     <div class="grid-item">
-                        <a href="#"><img src="imgs/5.jpg" alt="5"></a>
-                        <h3>Video</h3>
+                        <a href="#"><img src="imgs/6.jpg" alt="5"></a>
+                        <h3><a href="#">Video</a></h3>
                     </div>
                     <div class="grid-item">
                         <a href="interior-design/index.php"><img src="imgs/6.jpg" alt="6"></a>
-                        <h3>Learn More</h3>
+                        <h3><a href="#">Learn More</a></h3>
                     </div>
                 </div>
             </section>
@@ -80,11 +79,11 @@
                 <div class="grid-container photographySection"> 
                     <div class="grid-item">
                         <a href="#"><img src="imgs/4.jpg" alt="4"></a>
-                        <h3>Photography Gallery</h3>
+                        <h3><a href="#">Photography Gallery</a></h3>
                     </div>
                     <div class="grid-item">
-                        <a href="photography/index.php"><img src="imgs/5.jpg" alt="5"></a>
-                        <h3>Learn More</h3>
+                        <a href="photography/index.php"><img src="imgs/4.jpg" alt="5"></a>
+                        <h3><a href="#">Learn More</a></h3>
                     </div>
                 </div>
             </section>

@@ -20,7 +20,7 @@
             <div class="copyRight">
                 &copy; 2019 - <script>document.write(new Date().getFullYear());</script> by David Quach, All Rights Reserved<br>
 
-                Designed by Dai Nguyen <br>
+                Developed by <a href="https://dai-nguyen.com">Dai Nguyen</a><br>
 
                 <a href="http://validator.w3.org/check/referer"
                 target="_blank" rel="noopener"><img style="border:0;width:88px;height:26px;margin-top:10px;"

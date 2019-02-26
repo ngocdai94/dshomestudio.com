@@ -24,10 +24,6 @@ main {
     text-align: center;
 }
 
-#cssmenu {
-    /* float: left; */
-}
-
 /* ----- RECENT PROJECT GALLERIES ----- */
 .projectGallery {
     /* background-color: antiquewhite; */
@@ -80,11 +76,6 @@ main {
     border: 1px solid #222;
     text-align: center;
 }
-h2 {
-    margin: 10px 0;
-    font-family: sans-serif;
-    font-size: 14px;
-}
 
 img {
     width: 100%;
@@ -107,6 +98,12 @@ img {
     margin-left: 20px;
 }
 /* ----- END OF GRID LAYOUT ----- */
+
+/*----- ABOUT UST -----*/
+.whoWeAre, .whatWeDo {
+    margin-bottom: 10px;
+}
+/*----- END OF ABOUT US-----*/
 
 /*----- FOOTER -----*/
 footer {

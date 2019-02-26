@@ -1,3 +1,4 @@
+
 <?php 
 // config.php
 // THIS_PAGE is a file path
@@ -13,79 +14,79 @@ date_default_timezone_set('America/Los_Angeles');
 // get confidential file
 include ("confidential.php");
 
+// parent directory
 $parentDir = dirname(THIS_PAGE, 1);
-$title = '';
 
+// dynamic page variables
+$title = '';
+$homeActive = '';
+$aboutActive = '';
+$serviceActive = '';
+$interiorActive = '';
+$photographyActive = '';
+$portfolioActive = '';
+$interiorPortfolioActive = '';
+$photographyPortfolioActive = '';
+$videoPortfolioActive = '';
+$contactActive = '';
+
+// edit dynamic page
 if ($parentDir == INTERIOR_DESIGN) {
     $title = "Interior Design";
-    $logo="fa-box";
+    //$logo="fa-box";
+    $serviceActive = 'active';
+    $interiorActive = 'active';
 } elseif ($parentDir == PHOTOGRAPHY) {
     $title = "Photography";
-    $logo="fa-project-diagram";
-} elseif ($parentDir == PORFOLIO) {
-    $title = "Pofolio";
     //$logo="fa-project-diagram";
+    $serviceActive = 'active';
+    $photographyActive = 'active';
+// } elseif ($parentDir == PORFOLIO) {
+//     $title = "Pofolio";
+//     $logo="fa-project-diagram";
+//     $portfolioActive = 'active';
 } else {
     $title = FILE_NAME;
     switch(FILE_NAME){
         case 'index.php':
             $title = "DS Home Studio";
-            $logo="fa-home";
-        break;
-
-        case 'contact.php':
-            $title = "Contact Us";
-            $logo="fa-chart-bar";
-            $cssForm='<link rel="stylesheet" href="css/form.css">';
+            //$logo="fa-home";
+            $homeActive = 'active';
         break;
 
         case 'about.php':
             $title = "About Us";
-            $logo="fa-mail-bulk";
+            //$logo="fa-mail-bulk";
+            $aboutActive = 'active';
         break;
 
         case 'interior.php':
-        $title = "Interior Pofolio";
-        //$logo="fa-mail-bulk";
+            $title = "Interior Portfolio";
+            //$logo="fa-mail-bulk";
+            $portfolioActive = 'active';
+            $interiorPortfolioActive = 'active';
         break;
 
         case 'photography.php':
-        $title = "Photography Pofolio";
-        //$logo="fa-mail-bulk";
+            $title = "Photography Portfolio";
+            //$logo="fa-mail-bulk";
+            $portfolioActive = 'active';
+            $photographyPortfolioActive = 'active';
         break;
 
-        case 'photography.php':
-        $title = "Videos Pofolio";
-        //$logo="fa-mail-bulk";
+        case 'videos.php':
+            $title = "Videos Portfolio";
+            //$logo="fa-mail-bulk";
+            $portfolioActive = 'active';
+            $videoPortfolioActive = 'active';
+        break;
+
+        case 'contact.php':
+            $title = "Contact Us";
+            //$logo="fa-chart-bar";
+            $contactActive = 'active';
+            $cssForm='<link rel="stylesheet" href="css/form.css">';
         break;
     };
 }
-
-// //place URL & labels in the array here for navigation:
-// $nav1['index.php'] = "DS Home Studio";
-// $nav1['interior-design/index.php'] = "Interior Desgin";
-// $nav1['photography/index.php'] = "Photography";
-// $nav1['about.php'] = "About Us";
-// $nav1['contact.php'] = "Contact Us";
-    
-// /*
-// makeLinks function will create our dynamic nav when called.
-// Call like this:
-// echo makeLinks($nav1); #in which $nav1 is an associative array of links
-// */
-// function makeLinks($linkArray)
-// {
-//     $myReturn = '';
-
-//     foreach($linkArray as $url => $text)
-//     {
-//         if($url == THIS_PAGE)
-//         {//selected page - add class reference
-//             $myReturn .= '<li><a class="selected" href="' . $url . '">' . $text . '</a></li>' . PHP_EOL;
-//         }else{
-//             $myReturn .= '<li><a href="' . $url . '">' . $text . '</a></li>'  . PHP_EOL;
-//         }    
-//     }
-//     return $myReturn;    
-// }
 ?>

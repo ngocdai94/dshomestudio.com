@@ -29,6 +29,9 @@
     <meta property="og:url" content="https://dshomestudio.com">
     <meta property="og:image" content="https://dshomestudio.com/imgs/og-image.jpg">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
     <!-- CSS & FontAwesome -->
     <link rel="stylesheet" href="css/main.css"/> 
     <link rel="stylesheet" href="/css/fasolidbrand.css"/>
@@ -43,12 +46,12 @@
     <div class="content">
         <header>
             <h1 id="logo">
-                <a href="/index.php"><!--<img src="/imgs/og-image.jpg" alt="logo" width="40px" height="20px">--> DS Home Studio</a>
+                <a href="/index.php"> DS Home Studio</a>
             </h1>
             
             <!-- Boostrap Nav Menu with Dynamic Page Modification-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="/index.php">DS Home Studio</a>
+                <!-- <a class="navbar-brand" href="/index.php">DS Home Studio</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -19,9 +19,9 @@ main {
 }
 
 #logo {
-    /* float: left; */
-    /* margin-right: 100px; */
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
 }
 
 /* ----- RECENT PROJECT GALLERIES ----- */

@@ -1,3 +1,4 @@
+<!-- HEADER STARTS -->
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="DS Home Studio - Home Interior Design and Professional Photography for Real Estates">
-    <meta name="keywords" content="DS, home, studio, interior, design, professional, photography">
+    <meta name="keywords" content="DS, home, studio, interior, design, professional, photography, real, estaste">
     
     <!-- under construction: no follow -->
     <meta name="robots" content="index,nofollow" />
@@ -32,9 +33,11 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,500" rel="stylesheet">
+
     <!-- CSS & FontAwesome -->
+    <link rel="stylesheet" href="/css/all.css"/> 
     <link rel="stylesheet" href="css/main.css"/> 
-    <link rel="stylesheet" href="/css/fasolidbrand.css"/>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <?=$cssForm?>
 
@@ -50,7 +53,8 @@
             </h1>
             
             <!-- Boostrap Nav Menu with Dynamic Page Modification-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- navbar-light bg-light -->
+            <nav class="navbar navbar-expand-lg navbar-light" >
                 <!-- <a class="navbar-brand" href="/index.php">DS Home Studio</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -88,9 +92,11 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <!-- id="autocomplete" -->
+                        <input  class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
         </header>
+<!-- HEADER ENDS -->

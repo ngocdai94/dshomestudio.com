@@ -20,7 +20,7 @@
 #EDIT THE FOLLOWING:
 $toAddress = "hello@dai-nguyen.com";  //place your/your client's email address here
 $toName = "David Quach"; //place your client's name here
-$website = "dai-nguyen.com";  //place NAME of your client's website here
+$website = "https://dshomestudio.com";  //place NAME of your client's website here
 #--------------END CONFIG AREA ------------------------#
 $sendEmail = TRUE; //if true, will send an email, otherwise just show user data.
 $dateFeedback = true; //if true will show date/time with reCAPTCHA error - style a div with class of dateFeedback
@@ -60,19 +60,19 @@ if ($response != null && $response->success)
 		<div class= "senderName">
 			<h2>Let's Get In Touch!</h2>
 			<label>
-				<input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
+				<input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" size="44" autofocus />
 			</label>
 		</div>
 		<div class= "senderEmail">	
 			<label>
-				<input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
+				<input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" size="44" />
 			</label>
 		</div>
 		<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
 		<div class="howHear">	
 			<label>
 				How Did You Hear About Us?:<br />
-				<select name="How_Did_You_Hear_About_Us?" required="required" title="How You Heard is required" tabindex="30">
+				<select name="How_Did_You_Hear_About_Us?" required="required" title="How You Heard is required">
 					<option value="">Choose How You Heard</option>
 					<option value="Phone">Phone</option>
 					<option value="Web">Web</option>
@@ -83,13 +83,13 @@ if ($response != null && $response->success)
 			</label>
 		</div>
 		
-		<div >	
+		<div>	
 			<fieldset>
 				<legend>What Services Are You Interested In?</legend>
 				<div class="services">
-					<input type="checkbox" name="Interested_In[]" value="Interior Design" tabindex="40" /> Interior Design <br />
-					<input type="checkbox" name="Interested_In[]" value="Photography" /> Photography <br />
-					<input type="checkbox" name="Interested_In[]" value="Other" /> Other <br />
+					<input type="checkbox" name="Interested_In[]" aria-label="Interior Design"  value="Interior Design" /> Interior Design<br/>
+					<input type="checkbox" name="Interested_In[]" aria-label="Photography" value="Photography" /> Photography <br/>
+					<input type="checkbox" name="Interested_In[]" aria-label="Other" value="Other" /> Other <br/>
 				</div>
 			</fieldset>
 		</div>
@@ -98,16 +98,15 @@ if ($response != null && $response->success)
 			<fieldset>
 				<legend>Would you like to join our mailing list?</legend>
 				<div class="mailingList">
-					<input type="radio" name="Join_Mailing_List?" value="Yes" 
-					required="required" title="Mailing list is required" tabindex="50"  
-					/> Yes <br />
-					<input type="radio" name="Join_Mailing_List?" value="No" /> No <br/><br/>
+					<input type="radio" name="Join_Mailing_List?" aria-label="Mailing List" value="Yes" 
+					required="required" title="Mailing list is required"/> Yes <br />
+					<input type="radio" name="Join_Mailing_List?" aria-label="Mailing List" value="No"/> No <br/><br/>
 				</div>
 			</fieldset>
 		</div>
 		<div class="message">	
 			<label>
-				Comments:<br /><textarea name="Comments" cols="40" rows="4" placeholder="Your comments are important to us!" tabindex="60"></textarea>
+				Comments:<br /><textarea name="Comments" cols="40" rows="4" placeholder="Please enter your comments here!"></textarea>
 			</label>
 		</div>
 

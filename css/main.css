@@ -1,40 +1,12 @@
-html {
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif !important;
+h3 {
+    font-size: 1.5rem !important;
 }
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/* Wrapper of Body*/
-.content {
-	overflow: auto;
-    max-width: 1400px;
-    margin: 5px;
-}
-
-main {
-    margin: 5px;
-}
-
-#logo {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
-}
-
 /* ----- RECENT PROJECT GALLERIES ----- */
-.projectGallery {
-    /* background-color: antiquewhite; */
-}
-
 .galleryName {
     width: 25%;
     float: left;
-    margin-right: 15px;
+    margin-top: 10%;
     text-align: center;
-    margin-top: 8%;
 }
 
 .galleryItem {
@@ -42,6 +14,16 @@ main {
     float: left;
     margin-left: 25px;
 }
+
+/* Next and Prev Buttons */
+.arrowLeft, .arrowRight{
+    color: darkgray;
+}
+
+.arrowLeft:hover, .arrowRight:hover{
+    color: darkslateblue;
+}
+
 /* ----- END OF PROJECT GALLERIES ----- */
 
 /* ----- GRID LAYOUT FOR INTERIOR, PHOTOGRAPHY, and ABOUT ----- */
@@ -58,7 +40,6 @@ main {
     grid-template-columns: 32% 32% 32%; 
     margin-left: 2%;
     margin-right: auto;
-
 }
 
 .photographySection{
@@ -83,76 +64,27 @@ img {
 
 /* interior design */
 .interiorDesign {
-    margin-top: 10px;
+    margin-top: 15px;
     clear: both;
 }
 
 /* photography */
 .photography {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* about us */
 .aboutUs {
-    margin-top: 35%;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 /* ----- END OF GRID LAYOUT ----- */
 
-/*----- ABOUT UST -----*/
+/*----- ABOUT US -----*/
 .whoWeAre, .whatWeDo {
     margin-bottom: 10px;
 }
 /*----- END OF ABOUT US-----*/
-
-/*----- FOOTER -----*/
-footer {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-footer a{
-    color: cornflowerblue;
-    text-decoration: none;
-}
-
-footer a:hover{
-    color: #009fff;
-}
-
-.information, .socialNetwork{
-    margin-bottom: 10px;
-}
-.information a{
-    margin-right: 1%;
-}
-
-.socialNetwork a{
-    margin-right: 2%;
-}
-/*----- END OF FOOTER -----*/
-
-/* ----- CONTACT ME ----- */
-.contactMe {
-    text-align: center;
-    padding: 1em;
-}
-
-.contactMe a {
-    color: #40424a;
-    text-decoration: none;
-    font-size: 1.2em;
-    border: 2px solid;
-    padding: 0.3em 0.8em;
-}
-
-.contactMe a:hover {
-    background-color: #ddd;
-    color: #009fff;
-    text-decoration: none;
-}
-/* ----- END OF CONTACT ME ----- */
 
 /* START RESPONSIVE STYLES */
 /* DESKTOP */
@@ -173,6 +105,14 @@ footer a:hover{
     
     .galleryItem {
         width: 55%;
+    }
+
+    .arrowRight {
+        margin-right: 50px;
+    }
+
+    .arrowRight, .arrowLeft {
+        margin-top: 45px;
     }
 
     .interiorSection {
@@ -203,7 +143,7 @@ footer a:hover{
 @media all  and (max-width:730px) {
     .galleryName {
         width: 100%;
-        float: none;
+        margin-top: 5px;
     }
     
     .galleryItem {
@@ -232,28 +172,4 @@ footer a:hover{
         margin-top: 0;
         margin-left: 0%;
     }
-}
-
-@font-face {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: fallback;
-    src: url(/assets/Josefin_Sans/JosefinSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-display: fallback;
-    src: url(/assets/Josefin_Sans/JosefinSans-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-display: fallback;
-    src: url(/assets/Josefin_Sans/JosefinSans-Bold.ttf);
 }

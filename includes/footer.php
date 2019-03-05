@@ -1,7 +1,8 @@
+<!-- FOOTER STARTS -->
         <footer>
             <div class="information">
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="../about.php">About</a>
+                <a href="../contact.php">Contact</a>
                 <a href="mailto:hello@dshomestudio.com">hello@dshomestudio.com</a><br>
             </div>
 
@@ -18,7 +19,7 @@
             </div>
 
             <div class="copyRight">
-                &copy; 2019 - <script>document.write(new Date().getFullYear());</script> by David Quach, All Rights Reserved<br>
+                &copy; 2019 - <?php echo date("Y"); ?> by David Quach, All Rights Reserved<br>
 
                 Developed by <a href="https://dai-nguyen.com">Dai Nguyen</a><br>
 
@@ -33,3 +34,4 @@
     <!-- END WRAPPER -->
 </body>
 </html>
+<!-- FOOTER ENDS -->

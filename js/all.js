@@ -31,6 +31,7 @@
 /*------------------------------------------ jQUERY UI ENDS --------------------------------------------*/
 
 /*--------------------------------------------- MAIN ---------------------------------------------------*/
+// Variables for Autocomplete
 var availableRooms = [
   "Living Room", 
   "Dinning Room", 
@@ -38,14 +39,24 @@ var availableRooms = [
   "Bathroom",
   "Backyard"
 ];
-                  
+
+/* 
+ * Form Validation Variables
+ */
+var isNameValidated = false;
+var isEmailValidated = false;
+
 $(function() {
-  /* Change Slideshow Carousel Interval*/
+  /* 
+   * Change Slideshow Carousel Interval 
+   */
   $('.carousel').carousel({
-    interval: 10000
+    interval: 10000 // 10s
   })
 
-  /* Autocomplete Search Box for Bootstraps using jQuerry UI*/
+  /*
+   *  Autocomplete Search Box for Bootstraps using jQuerry UI
+   */
   // Add an ID attribute for search box
   $('input.form-control').attr('id', 'autocomplete');
 
@@ -55,7 +66,9 @@ $(function() {
     autoFocus: true
   });
 
-  /* Add Bootstraps Tooltip */
+  /* 
+   * Add Bootstraps Tooltip 
+   */
   // Add attribute data-toggle
   $('input:submit').attr('data-toggle', 'tooltip');
 
@@ -66,7 +79,36 @@ $(function() {
   $('input:submit').attr('title', 'Hooray!');
 
   // Trigger Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="tooltip"]').tooltip();
+
+  /* 
+   * Form Validations 
+   */
+  // Check Name
+  $('#name').blur(function() {
+    if ($('#name').val().length <= 2 || !isNaN($('#name').val())) {
+      $('#nameFeedback').empty();
+      $('#nameFeedback').append('Please enter a valid Name!');
+      $('#nameFeedback').css('color', 'red');
+      isNameValidated = false;
+    } else {
+      $('#nameFeedback').empty();
+      isNameValidated = true;
+    }
+  });
+
+  // Check Email
+  $('#email').blur(function() {
+    if ($('#email').val().length == 0 || !checkEmail()) {
+      $('#emailFeedback').empty();
+      $('#emailFeedback').append('Please enter a valid Email!');
+      $('#emailFeedback').css('color', 'red');
+      isNameValidated = false;
+    } else {
+      $('#emailFeedback').empty();
+      isNameValidated = true;
+    }
+  });
 });
 
 /* Get Autocomplete Result Then Return To Search Box */
@@ -78,5 +120,37 @@ function getData(req, callback) {
           result.push(availableRooms[i]);
   }
   callback(result);
+}
+
+// Validate Email
+function checkEmail(){
+  var specialCharacter = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,<>\/? ]/;
+  var email = $('#email').val();
+  var countDot = 0;
+  var countAt = 0;
+  var atIndex = 0;
+
+  for (let i = 0; i < email.length; i++) {
+    if (email[i] == '.') {
+      countDot++;
+    } else if (email[i] == '@') {
+      atIndex = i;
+      countAt++;
+    } else {
+      continue;
+    }
+  }
+  
+  // Use RegEx to check for a valid email input
+  var firstPart = email.substr(0, atIndex); // First Part of Email
+  var secondPart = email.substr(atIndex+1, email.length); // Second Part of Email
+  if (countAt == 1 && countDot >= 1 && email[0] != '.' &&
+    !specialCharacter.test(firstPart) &&
+    !specialCharacter.test(secondPart)) {
+    return true;
+  }
+
+  // Return false if not valid
+  return false;
 }
 /*-------------------------------------------------- ENDS ---------------------------------------------*/

@@ -60,13 +60,15 @@ if ($response != null && $response->success)
 		<div class= "senderName">
 			<h2>Let's Get In Touch!</h2>
 			<label>
-				<input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" size="44" autofocus />
+				<input id ="name" type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" size="44" autofocus />
 			</label>
+			<div id="nameFeedback"></div><br>
 		</div>
 		<div class= "senderEmail">	
 			<label>
-				<input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" size="44" />
+				<input id="email" type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" size="44" />
 			</label>
+			<div id="emailFeedback"></div><br>
 		</div>
 		<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
 		<div class="howHear">	

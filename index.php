@@ -28,7 +28,7 @@
                                     <a href="#">Name of the Galleries #2</a>
                                 </div>
                                 <div class="galleryItem">
-                                    <img src="imgs/3.jpg" class="d-block w-100" alt="galler #2">
+                                    <img src="imgs/2.jpg" class="d-block w-100" alt="galler #2">
                                 </div>
                             </div>
                         
@@ -37,7 +37,7 @@
                                     <a href="#">Name of the Galleries #3</a>
                                 </div>
                                 <div class="galleryItem">
-                                    <img src="imgs/5.jpg" class="d-block w-100" alt="galler #3">
+                                    <img src="imgs/3.jpg" class="d-block w-100" alt="galler #3">
                                 </div>
                             </div>
                         </div>
@@ -61,16 +61,16 @@
                 <h2>Interior Design Service</h2>
                 <div class="grid-container interiorSection"> 
                     <div class="grid-item">
-                        <a href="portfolio/interior.php"><img src="imgs/6.jpg" alt="4"></a>
+                        <a href="portfolio/interior.php"><img src="imgs/3.jpg" alt="4"></a>
                         <h3><a href="portfolio/interior.php">Interior Gallery</a></h3>
                     </div>
                     <div class="grid-item">
-                        <a href="portfolio/videos.php"><img src="imgs/6.jpg" alt="5"></a>
+                        <a href="portfolio/videos.php"><img src="imgs/3.jpg" alt="5"></a>
                         <h3><a href="portfolio/videos.php">Videos</a></h3>
                     </div>
                     <div class="grid-item">
-                        <a href="interior-design/index.php"><img src="imgs/6.jpg" alt="6"></a>
-                        <h3><a href="interior-design/index.php">Learn More</a></h3>
+                        <a href="interior-design/index.php"><img src="imgs/3.jpg" alt="6"></a>
+                        <h3><a href="interior-design/index.php">About Interior Design</a></h3>
                     </div>
                 </div>
             </section>
@@ -79,12 +79,12 @@
                 <h2>Photography Service</h2>
                 <div class="grid-container photographySection"> 
                     <div class="grid-item">
-                        <a href="portfolio/photography.php"><img src="imgs/4.jpg" alt="4"></a>
+                        <a href="portfolio/photography.php"><img src="imgs/2.jpg" alt="4"></a>
                         <h3><a href="portfolio/photography.php">Photography Gallery</a></h3>
                     </div>
                     <div class="grid-item">
-                        <a href="photography/index.php"><img src="imgs/4.jpg" alt="5"></a>
-                        <h3><a href="photography/index.php">Learn More</a></h3>
+                        <a href="photography/index.php"><img src="imgs/2.jpg" alt="5"></a>
+                        <h3><a href="photography/index.php">About Photography</a></h3>
                     </div>
                 </div>
             </section>

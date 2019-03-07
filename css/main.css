@@ -139,7 +139,7 @@ img {
 }
  
  
-/* BIGGER PHONE */
+/* CELL PHONE */
 @media all  and (max-width:730px) {
     .galleryName {
         width: 100%;
@@ -149,6 +149,14 @@ img {
     .galleryItem {
         margin-left: 0%;
         width: 100%;
+    }
+
+    .arrowRight, .arrowLeft {
+        margin-top: 45px;
+    }
+
+    .fa-3x {
+        font-size: 2rem;
     }
 
     .interiorSection {

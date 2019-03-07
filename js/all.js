@@ -142,7 +142,7 @@ function checkEmail(){
   }
   
   // Use RegEx to check for a valid email input
-  var firstPart = email.substr(0, atIndex); // First Part of Email
+  var firstPart = email.substr(0, atIndex);               // First Part of Email
   var secondPart = email.substr(atIndex+1, email.length); // Second Part of Email
   if (countAt == 1 && countDot >= 1 && email[0] != '.' &&
     !specialCharacter.test(firstPart) &&
@@ -152,5 +152,12 @@ function checkEmail(){
 
   // Return false if not valid
   return false;
+}
+
+// Validate Before Send
+function validate() {
+  if (!isNameValidated && !isEmailValidated) {
+    alert("Please make sure your Name and Email are valid!");
+  }
 }
 /*-------------------------------------------------- ENDS ---------------------------------------------*/

@@ -115,7 +115,7 @@ if ($response != null && $response->success)
 		<div><?=$feedback?></div>
 		<div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div>
 		<div>
-			<input type="submit" value="SEND" />
+			<input type="submit" onclick="" value="SEND" />
 		</div>
     </form>
 	<!-- END HTML FORM -->

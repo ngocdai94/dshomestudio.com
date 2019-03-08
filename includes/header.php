@@ -83,9 +83,6 @@
                                 <a class="dropdown-item <?=$videoPortfolioActive?>" href="/portfolio/videos.php">Videos</a>
                             </div>
                         </li>
-                        <!-- <li class="nav-item <?=$porfolioActive?>">
-                            <a class="nav-link" href="/pofolio/index.php">Portfolios</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link <?=$contactActive?>" href="/contact.php">Contact Us</a>
                         </li>

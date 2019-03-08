@@ -30,6 +30,9 @@ $photographyPortfolioActive = '';
 $videoPortfolioActive = '';
 $contactActive = '';
 
+// dynamic css variable
+$cssForm = '';
+
 // edit dynamic page
 if ($parentDir == INTERIOR_DESIGN) {
     $title = "Interior Design";
